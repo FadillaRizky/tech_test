@@ -15,7 +15,6 @@ class DashboardPage extends GetView<DashboardController> {
             color: Colors.blue,
             child: Column(
               children: [
-                // Text(DateFormat('dd MMMM yyyy').format(DateTime.now())),
                 Obx(() {
                   return FutureBuilder(
                     future: controller.responseDashboard.value,

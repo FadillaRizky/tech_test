@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:intl/intl.dart';
 import 'package:tech_test/view/index.dart';
 import 'package:tech_test/view/login.dart';
 
@@ -13,7 +12,6 @@ import 'controller/profile_controller.dart';
 
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();
-  Intl.defaultLocale = 'id';
   await GetStorage.init();
   await initializeControllers();
   runApp(const MyApp());
